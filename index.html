@@ -4,107 +4,231 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Template</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="logo">Logo</div>
-            <nav>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+
+    <header class="header">
+        <a href="#" class="logo">Logo</a>
+        <nav class="navigation">
+            <ul class="navigation__wrapper">
+                <li class="navigation__item"><a href="#">About</a></li>
+                <li class="navigation__item"><a href="#">Work</a></li>
+                <li class="navigation__item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="intro">
-                <h1>Visual Designer</h1>
-                <p>Branding | Image Making</p>
-                <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
-                <a href="#" class="btn">Contact</a>
-            </div>
-            <div class="profile-photo">
-                <img src="profile.jpg" alt="Profile">
-            </div>
+    <section class="intro">
+        <div class="intro__profile">
+            <p class="intro__profile-subtitle"><strong>Branding | Image Making</strong></p>
+            <h1>Visual Designer</h1>
+            <p class="intro__profile-description">This is a template Figma file, turned into code using Anima. <br> Learn more at AnimaApp.com</p>
+            <a href="#" class="intro__profile-btn">Contact</a>
         </div>
+        <img src="images/photo.jpg" width="480" height="360" alt="Profile photo">
     </section>
 
-    <!-- Brands Section -->
     <section class="brands">
-        <div class="container">
-            <img src="google-logo.png" alt="Google">
-            <img src="nike-logo.png" alt="Nike">
-            <img src="samsung-logo.png" alt="Samsung">
-            <img src="apple-logo.png" alt="Apple">
-            <img src="adidas-logo.png" alt="Adidas">
+        <div class="brands__item">
+            <a href="#"><img src="images/google.png" alt="google"></a>
+        </div>
+        <div class="brands__item">
+            <a href="#"><img src="images/nike.png" alt="nike"></a>
+        </div>
+        <div class="brands__item">
+            <a href="#"><img src="images/samsung.png" alt="samsung"></a>
+        </div>
+        <div class="brands__item">
+            <a href="#"><img src="images/apple.png" alt="apple"></a>
+        </div>
+        <div class="brands__item">
+            <a href="#"><img src="images/adidas.png" alt="Adidias"></a>
         </div>
     </section>
 
-    <!-- Services Section -->
     <section class="services">
-        <div class="container">
-            <div class="service">
-                <h3>Product Design</h3>
-                <p>This is a template Figma file, turned into code using Anima.</p>
-            </div>
-            <div class="service">
-                <h3>Visual Design</h3>
-                <p>This is a template Figma file, turned into code using Anima.</p>
-            </div>
-            <div class="service">
-                <h3>Art Direction</h3>
-                <p>This is a template Figma file, turned into code using Anima.</p>
-            </div>
+        <div class="services__item">
+            <img src="images/product.jpg" class="services__img" alt="Product Design">
+            <h3 class="services__item-title">Product Design</h3>
+            <p class="services__item-subtitle">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+        </div>
+        <div class="services__item">
+            <img src="images/visual.jpg" class="services__img" alt="Visual Design">
+            <h3 class="services__item-title">Visual Design</h3>
+            <p class="services__item-subtitle">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+        </div>
+        <div class="services__item">
+            <img src="images/art.jpg" class="services__img" alt="Art Direction">
+            <h3 class="services__item-title">Art Direction</h3>
+            <p class="services__item-subtitle">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
         </div>
     </section>
 
-    <!-- Latest Work Section -->
     <section class="latest-work">
-        <div class="container">
-            <h2>Latest Work</h2>
-            <div class="work-item">
-                <img src="work1.jpg" alt="Project title">
-                <p>Project title</p>
-            </div>
-            <div class="work-item">
-                <img src="work2.jpg" alt="Project title">
-                <p>Project title</p>
-            </div>
-            <div class="work-item">
-                <img src="work3.jpg" alt="Project title">
-                <p>Project title</p>
-            </div>
+        <h2 class="latest-work__title">Latest Work</h2>
+        <div class="latest-work__wrapper">
+            <a href="" class="latest-work__item">
+                <img src="images/lastet-work-1.jpg" class="" alt="Art Direction">
+                <h4>Project title</h4>
+                <p>UI, Art drection</p>
+            </a>
+            <a href="" class="latest-work__item">
+                <img src="images/lastet-work-2.jpg" class="" alt="Art Direction">
+                <h4>Project title</h4>
+                <p>UI, Art drection</p>
+            </a>
+            <a href="" class="latest-work__item">
+                <img src="images/lastet-work-3.jpg" class="" alt="Art Direction">
+                <h4>Project title</h4>
+                <p>UI, Art drection</p>
+            </a>
+            <a href="" class="latest-work__item">
+                <img src="images/lastet-work-4.jpg" class="" alt="Art Direction">
+                <h4>Project title</h4>
+                <p>UI, Art drection</p>
+            </a>
+            <a href="" class="latest-work__item">
+                <img src="images/lastet-work-5.jpg" class="" alt="Art Direction">
+                <h4>Project title</h4>
+                <p>UI, Art drection</p>
+            </a>
+            <a href="" class="latest-work__item">
+                <img src="images/lastet-work-6.jpg" class="" alt="Art Direction">
+                <h4>Project title</h4>
+                <p>UI, Art drection</p>
+            </a>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
     <section class="testimonials">
-        <div class="container">
-            <h2>Testimonial</h2>
-            <div class="testimonial">
-                <p>"This is a template Figma file, turned into code using Anima."</p>
-                <h4>Gemma Nolen</h4>
-                <p>Google</p>
+        <h2 class="testimonial__title">Testimonial</h2>
+        <div class="testimonials__wrapper">
+            <div class="testimonials__item">
+                <p class="testimonials__item-title">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                <div class="testimonials__item-block">
+                    <img src="images/client.png" class="testimonials__item-avatar" alt="Project title">
+                    <div class="testimonials__item-grade">
+                        <div class="testimonials__item-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <h4>Gemma Nolen</h4>
+                        <p>Google</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__item">
+                <p class="testimonials__item-title">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                <div class="testimonials__item-block">
+                    <img src="images/client.png" class="testimonials__item-avatar" alt="Project title">
+                    <div class="testimonials__item-grade">
+                        <div class="testimonials__item-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <h4>Gemma Nolen</h4>
+                        <p>Google</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__item">
+                <p class="testimonials__item-title">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                <div class="testimonials__item-block">
+                    <img src="images/client.png" class="testimonials__item-avatar" alt="Project title">
+                    <div class="testimonials__item-grade">
+                        <div class="testimonials__item-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <h4>Gemma Nolen</h4>
+                        <p>Google</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__item">
+                <p class="testimonials__item-title">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                <div class="testimonials__item-block">
+                    <img src="images/client.png" class="testimonials__item-avatar" alt="Project title">
+                    <div class="testimonials__item-grade">
+                        <div class="testimonials__item-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <h4>Gemma Nolen</h4>
+                        <p>Google</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__item">
+                <p class="testimonials__item-title">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                <div class="testimonials__item-block">
+                    <img src="images/client.png" class="testimonials__item-avatar" alt="Project title">
+                    <div class="testimonials__item-grade">
+                        <div class="testimonials__item-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <h4>Gemma Nolen</h4>
+                        <p>Google</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__item">
+                <p class="testimonials__item-title">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                <div class="testimonials__item-block">
+                    <img src="images/client.png" class="testimonials__item-avatar" alt="Project title">
+                    <div class="testimonials__item-grade">
+                        <div class="testimonials__item-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <h4>Gemma Nolen</h4>
+                        <p>Google</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>Lets work together</p>
-            <div class="contact-form">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <button>Submit</button>
+    <footer class="footer">
+        <h2>Lets work together</h2>
+        <div class="footer__wrapper">
+            <div class="footer__social">
+                <p class="text">This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                <div class="footer__social-links">
+                    <a href="#" class="footer__social-link"><img src="images/discord.svg" class="" alt="Discord"></a>
+                    <a href="#" class="footer__social-link"><img src="images/facebook.svg" class="" alt="Facebook"></a>
+                    <a href="#" class="footer__social-link"><img src="images/dribbble.svg" class="" alt="Dribble"></a>
+                    <a href="#" class="footer__social-link"><img src="images/instagram.svg" class="" alt="Instagram"></a>
+                    <a href="#" class="footer__social-link"><img src="images/behance.svg" class="" alt="Behance"></a>
+                </div>
             </div>
+            <form class="footer__form">
+                <input class="footer__form-input" type="text" placeholder="Name">
+                <input class="footer__form-input" type="email" placeholder="Email">
+                <button class="footer__form-btn">Submit</button>
+            </form>
         </div>
     </footer>
 </body>
